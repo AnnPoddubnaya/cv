@@ -508,8 +508,12 @@ body {
   font-size:36px;
   position:absolute;
 }
-
-
+.column{
+  flex: 0 1 100%;
+}
+.row{
+  flex: 0 1 100%;
+}
 
 }
 
