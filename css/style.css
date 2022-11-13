@@ -71,10 +71,16 @@ body {
   font-size: 20px;
   border-radius: 10px;
   margin: 0 0 30px 0;
-  background-color: rgb(244, 217, 63);
+  background-color: rgb(250, 232, 126);
+
   padding: 0 0 0 5%;
 }
-
+.header__container{
+  display: block;
+}
+.menu-icon{
+  display: none;
+}
 /*---------------main---------*/
 .main {
   display: -webkit-box;
@@ -101,7 +107,8 @@ body {
 
 /*---------------header---------*/
 .nav {
-  background-color: rgb(244, 217, 63);
+  background-color: rgb(250, 232, 126);
+
   border-radius: 10px;
   padding: 10px;
 }
@@ -148,7 +155,7 @@ body {
   display: flex;
 }
 .section-summary__title {
-  color: rgb(244, 217, 63);
+  background-color: rgb(250, 232, 126);
   -webkit-text-shadow: 2px 2px 2px #000;
   -moz-text-shadow: 2px 2px 2px #000;
   text-shadow: 2px 2px 2px #000;
@@ -397,7 +404,7 @@ body {
   /* .footer__item */
 }
 .footer__body {
-  background-color: rgb(244, 217, 63);
+  background-color: rgb(250, 232, 126);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,3 +424,93 @@ body {
 .footer__item {
   font-size: 20px;
 }
+
+/* =======================tablet=================== */
+
+@media (max-width: 768px) {
+
+.header__container{
+  display: none;
+}
+
+
+.menu-icon{
+  display: block;
+  margin: 0 0 0 15px;
+}
+.bar1, .bar2, .bar3 {
+
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+    position: relative;
+}
+
+.open.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.open.bar2 {opacity: 0;}
+
+.open.bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.open.navigation {
+  width: 250px;
+}
+
+.navigation{
+  display: block;
+  width:0;
+  height:100%;
+  background-color: rgb(250, 232, 126);
+
+  overflow:hidden;
+  color:black;
+  padding-top:20px;
+  top:0;
+  left:0;
+  z-index:1;
+  position:fixed;
+  transition:0.8s;
+  
+}
+
+.navigation a {
+  padding:8px 8px 8px 72px;
+  text-decoration:none;
+  font-size: 25px;
+  color:black;
+  display:block;
+  transition:0.3s;
+}
+
+.navigation a:hover{
+  color:white;
+}
+
+
+#button1{
+  font-size:40px;
+}
+
+
+.navigation .endnav {
+  top:0;
+  right:25px;
+  margin-left:30px;
+  font-size:36px;
+  position:absolute;
+}
+
+
+
+}
+
+
