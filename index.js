@@ -49,17 +49,17 @@ const btnNext = document.querySelector('.button-next');
 let step = 0;
 
 btnPrev.addEventListener('click', function(){
-    step = step + 340;
-    if(step > 1700){
+    step = step + 300;
+    if(step > 1500){
         step = 0;
     }
     slidLine.style.left = -step + 'px';
 });
 
 btnNext.addEventListener('click', function(){
-    step = step - 340;
+    step = step - 300;
     if(step < 0){
-        step = 1700;
+        step = 1500;
     }
     slidLine.style.left = -step + 'px';
 })
