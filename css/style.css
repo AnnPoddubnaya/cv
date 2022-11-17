@@ -576,7 +576,9 @@ footer{
 }
 .skills__items {
   flex-wrap: wrap; 
-
+  row-gap: 0px;
+  width: 400px;
+  height: 200px;
 }
 .skills__item {
   flex: 0 1 33.333%;
@@ -587,7 +589,16 @@ footer{
 
 
 }
+.skills__item img {
+  width: 30px;
+  height: 30px;
+ 
+}
+.list__item {
+  width: 10px;
+  height: 10px;
 
+}
 .summury__foto {
   padding: 0px;
 }
@@ -660,6 +671,23 @@ height: 30px;
 }
 }
 @media (max-width: 375px){
+
+  .summury,
+.contacts,
+.course,
+.education,
+.langriges,
+.summary,
+.skills,
+.progects,
+footer{
+ 
+  max-width:360px;
+}
+.skills__items {
+  width: 360px;
+  height: 200px;
+}
   .slider-mob {
     margin: 0 28px;
 }
@@ -669,7 +697,23 @@ height: 30px;
 }
 }
 @media (max-width: 320px){
-
+  .summury,
+  .contacts,
+  .course,
+  .education,
+  .langriges,
+  .summary,
+  .skills,
+  .progects,
+  footer{
+    padding:10px  0px;
+    max-width: 300px;
+  }
+  .skills__items {
+  
+    width: 300px;
+    height: 200px;
+}
 .slider-mob{
   margin: 0;
 
