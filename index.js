@@ -25,17 +25,17 @@ const btnLeft = document.querySelector('.button-left');
 let offset = 0;
 
 btnRight.addEventListener('click', function(){
-offset = offset + 440;
-if(offset > 2200){
+offset = offset + 460;
+if(offset > 1840){
     offset = 0;
 }
 sliderLine.style.left = -offset + 'px';
 });
 
 btnLeft.addEventListener('click', function(){
-    offset = offset - 440;
+    offset = offset - 460;
     if(offset < 0){
-        offset = 2200;
+        offset = 1840;
     }
     sliderLine.style.left = -offset + 'px';
 });
