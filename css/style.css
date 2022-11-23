@@ -132,11 +132,16 @@ margin: 0 0 20px 0;
 }
 .contacts__items {
   display: flex;
+  flex-direction: column;
 justify-content: space-between;
+gap: 20px;
 }
 .contacts__item {
- 
+ display: flex;
+ justify-content: space-between;
+ gap: 20px;
 }
+
 .contacts__item:hover{
  transform: rotate(360deg);
  transition: ease 0.7s;
@@ -144,6 +149,7 @@ justify-content: space-between;
 .contacts__item-img{
   width: 50px;
   height: 50px;
+
 }
 .course {
   padding: 30px;
